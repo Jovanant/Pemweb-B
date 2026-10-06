@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ITS Student Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg style="display:none"><defs>
+<symbol id="cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z" fill="currentColor"/><path d="M6 12v5c3 2.5 9 2.5 12 0v-5"/></symbol>
+<symbol id="user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="currentColor"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6" fill="currentColor"/></symbol>
+<symbol id="save" viewBox="0 0 24 24"><path d="M5 3h11l4 4v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M8 3v5h7V3M8 21v-7h8v7"/></symbol>
+<symbol id="refresh" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 0-14.5-4M4 4v4h4M4 13a8 8 0 0 0 14.5 4M20 20v-4h-4"/></symbol>
+<symbol id="edit" viewBox="0 0 24 24"><path d="M4 20l4-1 11-11-3-3L5 16l-1 4z" fill="currentColor"/></symbol>
+<symbol id="trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"/></symbol>
+<symbol id="search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol>
+</defs></svg>
+
+<nav>
+  <div class="brand"><svg><use href="#cap"/></svg>ITS Student Management System</div>
+  <a data-v="home">Home</a><a data-v="students" class="active">Students</a><a data-v="about">About</a>
+  <div class="user"><svg><use href="#user"/></svg></div>
+</nav>
+
+<main>
+  <section id="home" class="view">
+    <div class="card"><h2>Home</h2>
+      <p>Selamat datang di ITS Student Management System.</p>
+      <p class="muted">Total mahasiswa terdata: <b id="total" >0</b>. Buka menu Students untuk menambah, mengubah, atau menghapus data.</p></div>
+  </section>
+
+  <section id="students" class="view show">
+    <div class="grid">
+      <div class="card">
+        <h2 id="formTitle">Form Student</h2>
+        <label for="nim">NRP</label><input id="nim" placeholder="Masukkan NRP" inputmode="numeric" maxlength="10"><div class="err" id="eNim"></div>
+        <label for="nama">Nama Lengkap</label><input id="nama" placeholder="Masukkan nama lengkap"><div class="err" id="eNama"></div>
+        <label for="jur">Jurusan</label>
+        <select id="jur"><option value="">Pilih Jurusan</option><option>Informatika</option><option>Sistem Informasi</option><option>Teknik Komputer</option><option>Manajemen</option></select><div class="err" id="eJur"></div>
+        <label for="email">Email</label><input id="email" type="email" placeholder="Masukkan email"><div class="err" id="eEmail"></div>
+        <div class="btns">
+          <button class="save" id="save"><svg><use href="#save"/></svg>Simpan</button>
+          <button class="cancel" id="cancel">Batal</button>
+          <button class="reset" id="reset"><svg><use href="#refresh"/></svg>Reset</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="top"><h2>Data Mahasiswa</h2>
+          <div class="search"><input id="q" placeholder="Cari mahasiswa..."><span><svg><use href="#search"/></svg></span></div></div>
+        <div class="wrap"><table><thead><tr><th>No</th><th>NRP</th><th>Nama</th><th>Jurusan</th><th>Email</th><th>Aksi</th></tr></thead><tbody id="tb"></tbody></table></div>
+        <div class="pager" id="pager"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="view">
+    <div class="card"><h2>About</h2>
+      <p>Aplikasi sederhana untuk mengelola data mahasiswa (tambah, ubah, hapus, cari) dibuat dengan HTML, CSS, dan JavaScript.</p>
+      <p class="muted">Data tersimpan di browser sehingga tidak hilang saat halaman dimuat ulang.</p></div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
