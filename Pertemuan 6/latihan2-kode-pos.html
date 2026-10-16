@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Latihan 2 - Pencarian Kode Pos</title>
+<style>
+body{font-family:Arial,sans-serif;background:#f2f2f2;margin:0;padding:20px}
+h2{text-align:center;margin:0 0 15px}
+.card{background:#fff;max-width:420px;margin:20px auto;padding:20px;border-radius:6px;box-shadow:0 1px 4px rgba(0,0,0,.15)}
+label{display:block;font-size:13px;margin:12px 0 4px}
+input[type=text],input[type=email],input[type=password],select,textarea{width:100%;box-sizing:border-box;padding:8px;border:1px solid #ccc;border-radius:4px;font-size:13px}
+textarea{height:60px}
+button{padding:8px 14px;border:0;border-radius:4px;color:#fff;background:#007bff;font-size:13px;cursor:pointer;margin-top:15px}
+.green{background:#4caf50;width:100%;font-size:14px}
+.err{color:red;font-size:12px;min-height:14px}
+.ok{color:green;font-size:13px;margin-top:10px}
+#saran{border:1px solid #ccc;border-top:0;max-height:140px;overflow:auto;display:none}
+#saran div{padding:6px 8px;font-size:13px;cursor:pointer}
+#saran div:hover{background:#e9f2ff}
+.hasil{margin-top:15px;padding:10px;background:#f2f8ff;border:1px solid #bcd;font-size:13px;display:none}
+</style>
+</head><body>
+<div class="card">
+<h2>PENCARIAN KODE POS</h2>
+ <label>Provinsi:</label>
+ <select id="prov"><option value="">Pilih Provinsi</option></select>
+ <label>Kabupaten / Kota:</label>
+ <select id="kota" disabled><option value="">Pilih Kabupaten / Kota</option></select>
+ <label>Kecamatan:</label>
+ <select id="kec" disabled><option value="">Pilih Kecamatan</option></select>
+ <button id="cari">Cari</button>
+ <div class="hasil" id="hasil"></div>
+ <p style="font-size:11px;color:#777;margin-top:15px">*Data contoh (sebagian daerah) untuk latihan.</p>
+</div>
+<script src="latihan2-kode-pos.js"></script>
+</body></html>

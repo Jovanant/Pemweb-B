@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Latihan 3 - Validasi Form</title>
+<style>
+body{font-family:Arial,sans-serif;background:#f2f2f2;margin:0;padding:20px}
+h2{text-align:center;margin:0 0 15px}
+.card{background:#fff;max-width:420px;margin:20px auto;padding:20px;border-radius:6px;box-shadow:0 1px 4px rgba(0,0,0,.15)}
+label{display:block;font-size:13px;margin:12px 0 4px}
+input[type=text],input[type=email],input[type=password],select,textarea{width:100%;box-sizing:border-box;padding:8px;border:1px solid #ccc;border-radius:4px;font-size:13px}
+textarea{height:60px}
+button{padding:8px 14px;border:0;border-radius:4px;color:#fff;background:#007bff;font-size:13px;cursor:pointer;margin-top:15px}
+.green{background:#4caf50;width:100%;font-size:14px}
+.err{color:red;font-size:12px;min-height:14px}
+.ok{color:green;font-size:13px;margin-top:10px}
+#saran{border:1px solid #ccc;border-top:0;max-height:140px;overflow:auto;display:none}
+#saran div{padding:6px 8px;font-size:13px;cursor:pointer}
+#saran div:hover{background:#e9f2ff}
+.hasil{margin-top:15px;padding:10px;background:#f2f8ff;border:1px solid #bcd;font-size:13px;display:none}
+</style>
+</head><body>
+<div class="card">
+<h2>REGISTRATION FORM</h2>
+<form id="reg">
+ <label>Name:</label>
+ <input type="text" id="name" placeholder="Enter your full name"><div class="err" id="e1"></div>
+ <label>Address:</label>
+ <input type="text" id="addr" placeholder="Enter your address"><div class="err" id="e2"></div>
+ <label>E-mail Address:</label>
+ <input type="text" id="mail" placeholder="Enter your email"><div class="err" id="e3"></div>
+ <label>Password:</label>
+ <input type="password" id="pass"><div class="err" id="e4"></div>
+ <label>Select Your Course:</label>
+ <select id="course">
+  <option value="">Select Course</option><option>Informatika</option><option>Sistem Informasi</option><option>Teknik Komputer</option>
+ </select><div class="err" id="e5"></div>
+ <label>College Name:</label>
+ <textarea id="college"></textarea><div class="err" id="e6"></div>
+ <label style="font-size:12px"><input type="checkbox" id="agree"> I agree to the above information</label><div class="err" id="e7"></div>
+ <button type="submit">Send</button>
+ <button type="reset" id="rst">Reset</button>
+</form>
+<div class="ok" id="okreg"></div>
+</div>
+
+<div class="card">
+<h2>Email Validation Form</h2>
+<form id="emailForm">
+ <label style="font-size:14px">Enter your email:</label>
+ <input type="text" id="email" placeholder="example@domain.com">
+ <div class="err" id="eemail"></div>
+ <button type="submit" class="green">Submit</button>
+</form>
+<div class="ok" id="okemail"></div>
+</div>
+
+<script src="latihan3-validasi-form.js"></script>
+</body></html>
