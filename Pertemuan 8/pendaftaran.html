@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pendaftaran Anggota - Perpustakaan Nusa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body data-page="pendaftaran">
+
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <span class="brand-logo"><i class="bi bi-book"></i></span>
+      <span><span class="brand-name">Perpustakaan Nusa</span><span class="brand-sub">RUANG ILMU, RUANG TUMBUH</span></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Menu"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse justify-content-end" id="menu">
+      <ul class="navbar-nav align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#tentang">Tentang Perpustakaan</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#layanan">Layanan</a></li>
+        <li class="nav-item"><a class="nav-link" href="daftar-anggota.html">Daftar Anggota</a></li>
+        <li class="nav-item"><a class="nav-link active" href="pendaftaran.html">Pendaftaran Anggota</a></li>
+        <li class="nav-item ms-lg-2"><a class="btn btn-line" href="login.html">Login Petugas <i class="bi bi-arrow-up-right ms-1"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container pb-5">
+  <div class="crumb"><a href="index.html">Beranda</a> / Keanggotaan / <span style="color:var(--green)">Pendaftaran Anggota</span></div>
+  <div class="page-head py-4">
+    <h1>Langkah pertama menuju banyak cerita.</h1>
+    <p class="text-muted-2 mb-0">Daftarkan dirimu dan mulai jelajahi seluruh layanan Perpustakaan Nusa.</p>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-lg-4">
+      <div class="side-card mb-4">
+        <i class="bi bi-book fs-4"></i>
+        <h2 class="mt-3 mb-4">Ruang belajar baru menantimu.</h2>
+        <ul class="p-0">
+          <li><i class="bi bi-check2"></i>Pinjam hingga 3 buku selama 7 hari</li>
+          <li><i class="bi bi-check2"></i>Akses koleksi dan referensi digital</li>
+          <li><i class="bi bi-check2"></i>Konsultasi bersama pustakawan</li>
+          <li><i class="bi bi-check2"></i>Ruang baca dan diskusi yang nyaman</li>
+        </ul>
+        <div class="eyebrow" style="color:#c9d6cd">Tanpa biaya pendaftaran</div>
+      </div>
+      <strong class="small d-block mb-2">Sebelum mengisi</strong>
+      <p class="small text-muted-2">Siapkan NIM/NIP dan email aktif. Satu NIM/NIP hanya dapat digunakan untuk satu keanggotaan.</p>
+      <p class="small text-muted-2">Simulasi UI: data contoh, tanpa pengiriman ke server. Data disimpan lokal di browser.</p>
+    </div>
+
+    <div class="col-lg-8">
+      <form id="formDaftar" class="form-card" novalidate>
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h2 class="fs-4 mb-0">Data calon anggota</h2>
+          <span class="small text-muted-2">* Wajib diisi</span>
+        </div>
+
+        <div id="alertForm" class="alert alert-nusa-err d-none" role="alert"></div>
+
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label" for="nama">Nama lengkap *</label>
+            <input type="text" class="form-control" id="nama" placeholder="Nama lengkap">
+            <div class="invalid-feedback"></div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label" for="nim">NIM/NIP *</label>
+            <input type="text" class="form-control" id="nim" placeholder="Contoh: 202601042">
+            <div class="invalid-feedback"></div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label" for="prodi">Program studi *</label>
+            <select class="form-select" id="prodi">
+              <option value="">Pilih program studi</option>
+              <option>Informatika</option>
+              <option>Manajemen</option>
+              <option>Desain Komunikasi Visual</option>
+              <option>Ilmu Komunikasi</option>
+              <option>Teknik Sipil</option>
+              <option>Administrasi Akademik</option>
+            </select>
+            <div class="invalid-feedback"></div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label" for="telepon">Nomor telepon *</label>
+            <input type="tel" class="form-control" id="telepon" placeholder="0812 3456 0789">
+            <div class="invalid-feedback"></div>
+          </div>
+          <div class="col-12">
+            <label class="form-label" for="email">Email *</label>
+            <input type="text" class="form-control" id="email" placeholder="nama@example.com">
+            <div class="invalid-feedback"></div>
+          </div>
+          <div class="col-12">
+            <label class="form-label" for="alamat">Alamat *</label>
+            <textarea class="form-control" id="alamat" rows="3" placeholder="Alamat lengkap"></textarea>
+            <div class="invalid-feedback"></div>
+          </div>
+          <div class="col-12">
+            <label class="form-label d-block">Jenis keanggotaan *</label>
+            <div class="row g-2">
+              <div class="col-md-4"><label class="type-opt"><input type="radio" name="jenis" value="Mahasiswa" checked> Mahasiswa</label></div>
+              <div class="col-md-4"><label class="type-opt"><input type="radio" name="jenis" value="Dosen"> Dosen</label></div>
+              <div class="col-md-4"><label class="type-opt"><input type="radio" name="jenis" value="Tenaga kependidikan"> Tenaga kependidikan</label></div>
+            </div>
+            <div class="small text-muted-2 mt-2">Untuk tenaga kependidikan, isi unit kerja pada kolom Program studi.</div>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="setuju">
+              <label class="form-check-label small" for="setuju">Saya menyatakan data yang diisi benar dan bersedia mengikuti tata tertib perpustakaan.</label>
+              <div class="invalid-feedback">Anda harus menyetujui pernyataan ini.</div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4">
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="index.html" class="small text-muted-2 text-decoration-none">← Kembali ke Beranda</a>
+          <button type="submit" class="btn btn-nusa">Simpan pendaftaran <i class="bi bi-arrow-right ms-1"></i></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+
+<div class="footer-simple">
+  <div class="container d-flex flex-wrap justify-content-between gap-2">
+    <span>© 2026 Perpustakaan Nusa · Konsep layanan kampus</span>
+    <span>Prototipe UI · Data ilustratif · Tidak terhubung ke institusi nyata</span>
+  </div>
+</div>
+
+<!-- Modal sukses -->
+<div class="modal fade" id="modalSukses" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <div class="d-flex justify-content-between">
+        <span class="eyebrow">Pendaftaran anggota</span>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+      </div>
+      <div class="icon-circle my-3"><i class="bi bi-check-lg"></i></div>
+      <h2 class="mb-2" id="sNamaJudul">Selamat bergabung!</h2>
+      <p class="text-muted-2">Pendaftaran berhasil disimpan. Namamu sudah ditambahkan ke Daftar Anggota Perpustakaan Nusa.</p>
+      <dl class="sum-box row mb-3 small">
+        <dt class="col-5">Nama lengkap</dt><dd class="col-7" id="sNama"></dd>
+        <dt class="col-5">NIM/NIP</dt><dd class="col-7" id="sNim"></dd>
+        <dt class="col-5">Program studi</dt><dd class="col-7" id="sProdi"></dd>
+        <dt class="col-5">Email</dt><dd class="col-7" id="sEmail"></dd>
+        <dt class="col-5">Jenis keanggotaan</dt><dd class="col-7" id="sJenis"></dd>
+      </dl>
+      <div><a href="daftar-anggota.html" class="btn btn-nusa">Lihat di Daftar Anggota <i class="bi bi-arrow-right ms-1"></i></a></div>
+      <p class="small text-muted-2 mt-3 mb-0" id="sInfo"></p>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/pendaftaran.js"></script>
+</body>
+</html>

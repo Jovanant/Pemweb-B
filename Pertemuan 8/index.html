@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Perpustakaan Nusa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body data-page="beranda">
+
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <span class="brand-logo"><i class="bi bi-book"></i></span>
+      <span><span class="brand-name">Perpustakaan Nusa</span><span class="brand-sub">RUANG ILMU, RUANG TUMBUH</span></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="menu">
+      <ul class="navbar-nav align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link active" data-nav="beranda" href="index.html">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" data-nav="tentang" href="#tentang">Tentang Perpustakaan</a></li>
+        <li class="nav-item"><a class="nav-link" data-nav="layanan" href="#layanan">Layanan</a></li>
+        <li class="nav-item"><a class="nav-link" href="daftar-anggota.html">Daftar Anggota</a></li>
+        <li class="nav-item"><a class="nav-link" href="pendaftaran.html">Pendaftaran Anggota</a></li>
+        <li class="nav-item ms-lg-2"><a class="btn btn-nusa" href="login.html">Login Petugas <i class="bi bi-arrow-up-right ms-1"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="eyebrow">Selamat datang di Perpustakaan Nusa</div>
+        <h1>Setiap halaman,<br>awal kemungkinan.</h1>
+        <p class="text-muted-2">Temukan referensi, ruang untuk berpikir, dan teman bertumbuh. Perjalanan akademikmu dimulai dari rasa ingin tahu.</p>
+        <div class="d-flex flex-wrap gap-2 mb-4">
+          <a href="pendaftaran.html" class="btn btn-nusa">Daftar jadi anggota <i class="bi bi-arrow-right ms-1"></i></a>
+          <a href="#layanan" class="btn btn-line">Jelajahi layanan</a>
+        </div>
+        <div class="small text-muted-2"><i class="bi bi-clock me-1"></i> Senin–Jumat, 08.00–20.00 WIB</div>
+      </div>
+      <div class="col-lg-6">
+        <div class="ph hero-img">
+          <img src="img/perpustakaan.jpg" alt="Ruang baca utama" onerror="this.remove()">
+          <div class="hero-note"><i class="bi bi-book me-2"></i><b>Buka buku, buka dunia.</b><br><span class="text-muted-2" style="font-size:11px">Untuk seluruh sivitas akademika</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Statistik -->
+<section class="stats">
+  <div class="container">
+    <div class="row g-3 align-items-center text-center text-md-start">
+      <div class="col-6 col-md-2"><div class="stat-num">18.640</div><div class="stat-label">Judul koleksi</div></div>
+      <div class="col-6 col-md-2"><div class="stat-num">2.480</div><div class="stat-label">Anggota aktif</div></div>
+      <div class="col-6 col-md-2"><div class="stat-num">36</div><div class="stat-label">Bidang keilmuan</div></div>
+      <div class="col-6 col-md-2"><div class="stat-num">120</div><div class="stat-label">Kursi baca</div></div>
+      <div class="col-12 col-md-4 stat-label">Gambaran Nusa dalam angka. Seluruh data bersifat ilustratif.</div>
+    </div>
+  </div>
+</section>
+
+<!-- Tentang -->
+<section class="section" id="tentang">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-5">
+        <div class="eyebrow">01 / Tentang Nusa</div>
+        <h2>Bukan sekadar rak buku. Ruang untuk bertumbuh.</h2>
+      </div>
+      <div class="col-md-7">
+        <p class="serif fs-5" style="color:var(--green)">Kami percaya, pengetahuan tumbuh ketika dibagikan. Nusa hadir mendampingi setiap langkah belajar, riset, dan kolaborasi di kampus.</p>
+        <hr>
+        <div class="d-flex flex-wrap gap-4 small text-muted-2">
+          <span><i class="bi bi-check2-circle me-1"></i>Terbuka untuk semua</span>
+          <span><i class="bi bi-check2-circle me-1"></i>Dekat dengan kebutuhanmu</span>
+          <span><i class="bi bi-check2-circle me-1"></i>Tumbuh bersama ilmu</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Layanan -->
+<section class="section alt" id="layanan">
+  <div class="container">
+    <div class="eyebrow">02 / Layanan</div>
+    <h2>Dukungan untuk setiap rasa ingin tahu.</h2>
+    <p class="text-muted-2 mb-4">Dari menemukan bacaan pertama hingga menuntaskan penelitian terakhirmu.</p>
+    <div class="row g-3">
+      <div class="col-sm-6 col-lg-3"><div class="card-n first"><span class="num">01</span><i class="bi bi-journal-bookmark"></i><h3>Pinjam &amp; bawa pulang</h3><p>Referensi untuk tugas hingga bacaan untuk jeda. Pinjam hingga 3 buku selama 7 hari.</p><span class="more">Sirkulasi Lantai 1</span></div></div>
+      <div class="col-sm-6 col-lg-3"><div class="card-n"><span class="num">02</span><i class="bi bi-display"></i><h3>Referensi tanpa batas</h3><p>Akses e-book, jurnal ilmiah, dan repositori karya akademik dari satu tempat.</p><span class="more">Koleksi digital</span></div></div>
+      <div class="col-sm-6 col-lg-3"><div class="card-n"><span class="num">03</span><i class="bi bi-chat-square-text"></i><h3>Teman risetmu</h3><p>Konsultasikan penelusuran literatur, sitasi, dan sumber tepercaya bersama pustakawan.</p><span class="more">Konsultasi referensi</span></div></div>
+      <div class="col-sm-6 col-lg-3"><div class="card-n"><span class="num">04</span><i class="bi bi-people"></i><h3>Ruang untuk fokus</h3><p>Pilih sudut tenang untuk belajar mandiri atau ruang diskusi untuk ide bersama.</p><span class="more">Ruang baca &amp; diskusi</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Koleksi -->
+<section class="section" id="koleksi">
+  <div class="container">
+    <div class="eyebrow">03 / Di antara rak buku</div>
+    <h2 class="mb-4">Bacaan baru, sudut pandang baru.</h2>
+    <div class="row g-3">
+      <div class="col-6 col-lg-3">
+        <div class="book-wrap"><div class="book" style="background:#d9b36a"><small>PUSTAKA NUSA</small>MERAWAT RASA INGIN TAHU</div></div>
+        <div class="eyebrow mt-2">Pengembangan Diri</div><div class="serif">Merawat Rasa Ingin Tahu</div><div class="small text-muted-2">Nadia Saraswati · Tersedia</div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="book-wrap"><div class="book" style="background:#2f5a45"><small>PUSTAKA NUSA</small>KOTA, MANUSIA, &amp; MASA DEPAN</div></div>
+        <div class="eyebrow mt-2">Arsitektur &amp; Sosial</div><div class="serif">Kota, Manusia, dan Masa Depan</div><div class="small text-muted-2">Arga Wicaksana · Tersedia</div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="book-wrap"><div class="book" style="background:#9fb3ad"><small>PUSTAKA NUSA</small>Seni Membaca Data</div></div>
+        <div class="eyebrow mt-2">Sains &amp; Teknologi</div><div class="serif">Seni Membaca Data</div><div class="small text-muted-2">Dian Paramita · Tersedia</div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="book-wrap"><div class="book" style="background:#b4604b"><small>PUSTAKA NUSA</small>JEJAK NUSANTARA</div></div>
+        <div class="eyebrow mt-2">Sejarah &amp; Budaya</div><div class="serif">Jejak Nusantara</div><div class="small text-muted-2">Raka Adinata · Tersedia</div>
+      </div>
+    </div>
+    <p class="small text-muted-2 mt-3">Pilihan judul, penulis, dan ketersediaan ditampilkan sebagai ilustrasi koleksi.</p>
+  </div>
+</section>
+
+<!-- Ruang -->
+<section class="section alt">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-6"><div class="ph room-img"><img src="img/ruang-baca.jpg" alt="Ruang baca" onerror="this.remove()"></div></div>
+      <div class="col-lg-6">
+        <div class="eyebrow">04 / Ruang untukmu</div>
+        <h2>Nyaman belajar. Leluasa berkarya.</h2>
+        <p class="text-muted-2">Tinggal bawa ide dan rasa ingin tahu. Kami siapkan ruang yang mendukungnya.</p>
+        <ul class="room-list p-0 mb-0">
+          <li><b>01</b><strong>Zona baca tenang</strong><div class="small text-muted-2">120 kursi, cahaya alami, dan sudut favoritmu.</div></li>
+          <li><b>02</b><strong>Ruang diskusi kolaboratif</strong><div class="small text-muted-2">4 ruang untuk bertukar gagasan bersama tim.</div></li>
+          <li><b>03</b><strong>Terhubung &amp; inklusif</strong><div class="small text-muted-2">Wi-Fi, stopkontak, dan akses ramah difabel.</div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Langkah daftar -->
+<section class="section">
+  <div class="container">
+    <div class="d-flex flex-wrap justify-content-between align-items-end mb-4 gap-3">
+      <div><div class="eyebrow">05 / Mulai perjalananmu</div><h2 class="mb-0">Satu keanggotaan, banyak kemungkinan.</h2></div>
+      <a href="pendaftaran.html" class="btn btn-nusa">Pendaftaran Anggota</a>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4 step"><div class="n">01</div><strong>Isi data dirimu</strong><p class="small text-muted-2">Gunakan NIM/NIP dan email aktif. Terbuka untuk mahasiswa, dosen, dan tenaga kependidikan.</p></div>
+      <div class="col-md-4 step"><div class="n">02</div><strong>Simpan pendaftaran</strong><p class="small text-muted-2">Periksa kembali datamu. Setelah berhasil, namamu akan masuk ke daftar anggota.</p></div>
+      <div class="col-md-4 step"><div class="n">03</div><strong>Mulai jelajahi Nusa</strong><p class="small text-muted-2">Kunjungi meja layanan dengan identitas kampus untuk mengenal layanan dan koleksi.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Agenda -->
+<section class="section alt">
+  <div class="container">
+    <div class="eyebrow">06 / Hidup di antara buku</div>
+    <div class="d-flex flex-wrap justify-content-between align-items-end mb-4">
+      <h2 class="mb-0">Bertemu, berbagi, bertumbuh.</h2>
+      <span class="eyebrow">Agenda ilustratif · November 2026</span>
+    </div>
+    <div class="row g-3">
+      <div class="col-md-6"><div class="event"><div class="date">12<small>NOV</small></div><div><div class="eyebrow">Kelas literasi</div><div class="serif fs-5">Dari topik ke referensi yang tepat</div><div class="small text-muted-2">14.00–15.30 WIB · Ruang Diskusi A</div></div></div></div>
+      <div class="col-md-6"><div class="event"><div class="date">20<small>NOV</small></div><div><div class="eyebrow">Temu pembaca</div><div class="serif fs-5">Membaca kota, memahami manusia</div><div class="small text-muted-2">15.30–17.00 WIB · Ruang Komunal</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-5">
+        <div class="eyebrow">07 / Sebelum berkunjung</div>
+        <h2>Ada yang ingin ditanyakan?</h2>
+        <p class="text-muted-2">Kami senang membantu. Sapa pustakawan di meja layanan atau melalui email.</p>
+        <strong class="small">layanan@perpusnusa.example</strong>
+      </div>
+      <div class="col-lg-7">
+        <div class="accordion" id="faq">
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#f1">Siapa yang bisa menjadi anggota?</button></h3>
+            <div id="f1" class="accordion-collapse collapse show" data-bs-parent="#faq"><div class="accordion-body">Mahasiswa, dosen, dan tenaga kependidikan dapat mendaftar menggunakan NIM/NIP yang valid. Pendaftaran keanggotaan tidak dipungut biaya.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f2">Berapa lama buku dapat dipinjam?</button></h3>
+            <div id="f2" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Anggota dapat meminjam hingga 3 buku selama 7 hari.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f3">Apakah tersedia akses koleksi digital?</button></h3>
+            <div id="f3" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Ya, tersedia e-book, jurnal ilmiah, dan repositori karya akademik.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f4">Bagaimana cara memesan ruang diskusi?</button></h3>
+            <div id="f4" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Pemesanan ruang diskusi dapat dilakukan di meja layanan atau melalui email perpustakaan.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="brand mb-3"><span class="brand-logo" style="background:#2b5642"><i class="bi bi-book"></i></span><span><span class="brand-name text-white">Perpustakaan Nusa</span><span class="brand-sub" style="color:#a9bcb0">RUANG ILMU, RUANG TUMBUH</span></span></div>
+        <div class="tagline mb-3">Rasa ingin tahu selalu punya tempat di sini.</div>
+        <div>Gedung Pustaka, Kampus Nusa (konseptual)<br>Jl. Cakrawala Ilmu No. 1, Kota Nusa</div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h4>Jelajahi</h4>
+        <a href="#tentang">Tentang Perpustakaan</a><a href="#layanan">Layanan</a><a href="daftar-anggota.html">Daftar Anggota</a><a href="pendaftaran.html">Pendaftaran Anggota</a><a href="login.html">Login Petugas</a>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h4>Jam layanan</h4>
+        Senin–Jumat · 08.00–20.00 WIB<br>Sabtu · 09.00–14.00 WIB<br>Minggu &amp; hari libur · Tutup
+      </div>
+      <div class="col-lg-2">
+        <h4>Mari terhubung</h4>
+        layanan@perpusnusa.example<br>021 0000 0123 (ilustratif)
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-wrap justify-content-between gap-2">
+      <span>© 2026 Perpustakaan Nusa · Ruang ilmu, ruang tumbuh.</span>
+      <span>Konsep UI · Seluruh data, kontak, alamat, dan jam layanan bersifat ilustratif.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
